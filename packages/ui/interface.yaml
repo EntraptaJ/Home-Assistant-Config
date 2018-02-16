@@ -15,12 +15,16 @@
 http:
   api_password: !secret http_password
   base_url: !secret http_url
-  ssl_certificate:
-  ssl_key
+  ssl_certificate: /ssl/
+  ssl_key: /ssl/
+  ip_ban_enabled: True
+  login_attempts_threshold: 3
 
 ##################################################
 ## Front End
 ##################################################
+config:
+
 
 
 
