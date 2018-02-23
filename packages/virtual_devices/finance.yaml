@@ -1,0 +1,37 @@
+###########################################
+#                                         #
+# This package contains the configuration #
+# for the financial components I use      #
+#                                         #
+###########################################
+
+##################################################
+## Customize
+##################################################
+
+
+
+
+
+##################################################
+## Groups
+##################################################
+group:
+  finance:
+    name: finance
+    icon: mdi:dollar
+    entities:
+      - group.finance-bitcoin
+
+  finance-bitcoin:
+    name: Bitcoin
+    icon: mdi:bitcoin
+
+##################################################
+## Components
+##################################################
+sensor:
+  - platform: bitcoin
+    currency: CAD
+    display_options:
+      - exchangerate
